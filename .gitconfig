@@ -1,0 +1,20 @@
+[user]
+	name = Simon Fenton
+	email = simon@justgiving.com
+
+[alias]
+	igd = !git ls-files -v | grep "^[a-z]"
+	ex = !git update-index --assume-unchanged
+	inc = !git update-index --no-assume-unchanged
+	st = !git status -s 
+	co = !git checkout
+	ci = !git commit
+	hist = !git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+
+[color]
+	ui = true
+
+[push]
+	default = tracking
+[gui]
+	recentrepo = D:/JustGiving/Website
