@@ -1,6 +1,6 @@
 [user]
 	name = Simon Fenton
-	email = simon@justgiving.com
+	email = swfenton@gmail.com
 
 [alias]
 	igd = !git ls-files -v | grep "^[a-z]"
@@ -10,11 +10,23 @@
 	co = !git checkout
 	ci = !git commit
 	hist = !git log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	ff = !git pull --ff-only
+	aa = !git add --all
 
 [color]
 	ui = true
 
 [push]
 	default = tracking
-[gui]
-	recentrepo = D:/JustGiving/Website
+[credential]
+	helper = !'C:\\Users\\sfenton\\AppData\\Roaming\\GitCredStore\\git-credential-winstore.exe'
+[core]
+	autocrlf = true
+[merge]
+	tool = bc3
+[mergetool]
+	bc3 = trustExitCode
+[difftool "bc3"]
+	path = "c:/Program Files (x86)/Beyond Compare 3/BComp.exe"
+[mergetool "bc3"]
+	path = "c:/Program Files (x86)/Beyond Compare 3/BComp.exe"
